@@ -1,0 +1,31 @@
+- type: carccmedInjuryProperty
+  id: pain
+  name: Pain
+
+- type: carccmedInjuryProperty
+  id: severity
+  name: Severity
+
+- type: carccmedInjuryProperty
+  id: bleeding
+  name: Bleeding
+
+- type: carccmedInjuryProperty
+  id: infection
+  name: Infection
+
+- type: carccmedInjuryProperty
+  id: infectionRisk
+  name: Infection Risk
+
+- type: carccmedInjuryProperty
+  id: necrosis
+  name: Necrosis
+
+- type: carccmedInjuryProperty
+  id: swelling
+  name: Swelling
+
+- type: carccmedInjuryProperty
+  id: scarring
+  name: Scarring

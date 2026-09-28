@@ -1,0 +1,182 @@
+- type: carccmedTreatment
+  id: cleaned
+  name: Cleaned
+  properties:
+    - property: infectionRisk
+      scale: 0.85
+
+- type: carccmedTreatment
+  id: disinfected
+  name: Disinfected
+  properties:
+    - property: infectionRisk
+      scale: 0.40
+    - property: pain
+      add: 0.10
+
+- type: carccmedTreatment
+  id: irrigated
+  name: Irrigated
+  properties:
+    - property: infectionRisk
+      scale: 0.60
+    - property: pain
+      add: 0.05
+
+- type: carccmedTreatment
+  id: debrided
+  name: Debrided
+  properties:
+    - property: infectionRisk
+      add: -0.75
+    - property: pain
+      add: 0.25
+    - property: bleeding
+      add: 0.05
+
+- type: carccmedTreatment
+  id: foreignMaterialRemoved
+  name: Foreign Material Removed
+  properties:
+    - property: infectionRisk
+      add: -0.50
+    - property: bleeding
+      add: 0.10
+    - property: pain
+      add: 0.20
+
+- type: carccmedTreatment
+  id: dressed
+  name: Dressed
+  properties:
+    - property: bleeding
+      scale: 0.60
+    - property: infectionRisk
+      scale: 0.85
+
+- type: carccmedTreatment
+  id: grafted
+  name: Grafted
+  properties:
+    - property: severity
+      add: -0.30
+
+- type: carccmedTreatment
+  id: compressed
+  name: Compressed
+  properties:
+    - property: bleeding
+      scale: 0.30
+    - property: pain
+      add: 0.15
+
+- type: carccmedTreatment
+  id: hemostaticDressing
+  name: Hemostatic Dressing
+  properties:
+    - property: bleeding
+      scale: 0.15
+    - property: pain
+      add: 0.20
+
+- type: carccmedTreatment
+  id: sutured
+  name: Sutured
+  properties:
+    - property: bleeding
+      add: -0.75
+    - property: infectionRisk
+      add: -0.25
+    - property: pain
+      add: 0.10
+
+- type: carccmedTreatment
+  id: stapled
+  name: Stapled
+  properties:
+    - property: bleeding
+      add: -0.65
+    - property: infectionRisk
+      add: -0.15
+    - property: pain
+      add: 0.15
+
+- type: carccmedTreatment
+  id: cauterized
+  name: Cauterized
+  properties:
+    - property: bleeding
+      add: -0.90
+    - property: pain
+      add: 0.30
+    - property: necrosis
+      add: 0.15
+
+- type: carccmedTreatment
+  id: immobilized
+  name: Immobilized
+  properties:
+    - property: severity
+      add: -0.05
+    - property: pain
+      add: -0.10
+
+- type: carccmedTreatment
+  id: reduced
+  name: Reduced
+  properties:
+    - property: severity
+      add: -0.20
+    - property: pain
+      add: 0.35
+
+- type: carccmedTreatment
+  id: cooled
+  name: Cooled
+  properties:
+    - property: pain
+      add: -0.10
+
+- type: carccmedTreatment
+  id: rewarmed
+  name: Rewarmed
+  properties:
+    - property: pain
+      add: -0.10
+
+- type: carccmedTreatment
+  id: neutralized
+  name: Neutralized
+  properties:
+    - property: severity
+      add: -0.25
+    - property: pain
+      add: 0.05
+
+- type: carccmedTreatment
+  id: anesthetized
+  name: Anesthetized
+  properties:
+    - property: pain
+      add: -0.90
+
+- type: carccmedTreatment
+  id: analgesia
+  name: Analgesia
+  properties:
+    - property: pain
+      scale: 0.40
+
+- type: carccmedTreatment
+  id: antibiotics
+  name: Antibiotics
+  properties:
+    - property: infection
+      scale: 0.50
+
+- type: carccmedTreatment
+  id: antiseptic
+  name: Antiseptic
+  properties:
+    - property: infectionRisk
+      add: -0.70

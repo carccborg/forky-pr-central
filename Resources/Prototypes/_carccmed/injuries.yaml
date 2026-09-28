@@ -1,0 +1,151 @@
+# mechanical injuries
+- type: carccmedInjury
+  id: mechanicalInjury
+  name: Mechanical Injury
+  abstract: true
+  properties:
+    - severity
+    - pain
+    - infectionRisk
+
+- type: carccmedInjury
+  id: contusion
+  name: Contusion
+  parent: mechanicalInjury
+  properties:
+    - swelling
+    - scarring
+
+- type: carccmedInjury
+  id: laceration
+  name: Laceration
+  parent: mechanicalInjury
+  properties:
+    - bleeding
+    - infection
+    - scarring
+
+- type: carccmedInjury
+  id: penetration
+  name: Penetration
+  parent: mechanicalInjury
+  properties:
+    - bleeding
+    - infection
+    - scarring
+
+
+# bones & joints
+- type: carccmedInjury
+  id: skeletalInjury
+  name: Skeletal Injury
+  abstract: true
+  parent: mechanicalInjury
+  properties:
+    - swelling
+
+- type: carccmedInjury
+  id: fracture
+  name: Fracture
+  parent: skeletalInjury
+  properties:
+    - swelling
+
+- type: carccmedInjury
+  id: break
+  name: Break
+  parent: skeletalInjury
+  properties:
+    - swelling
+
+- type: carccmedInjury
+  id: dislocation
+  name: Dislocation
+  parent: skeletalInjury
+  properties:
+    - swelling
+
+- type: carccmedInjury
+  id: sprain
+  name: Sprain
+  parent: skeletalInjury
+  properties:
+    - swelling
+
+
+# thermal
+- type: carccmedInjury
+  id: thermalInjury
+  name: Thermal Injury
+  abstract: true
+  properties:
+    - severity
+    - pain
+    - swelling
+    - scarring
+    - necrosis
+
+- type: carccmedInjury
+  id: burn
+  name: Burn
+  parent: thermalInjury
+  properties:
+    - infection
+
+- type: carccmedInjury
+  id: frostbite
+  name: Frostbite
+  parent: thermalInjury
+  properties:
+    - necrosis
+
+
+# internal
+- type: carccmedInjury
+  id: internalInjury
+  name: Internal Injury
+  abstract: true
+  parent: baseInjury
+  properties:
+    - bleeding
+    - pain
+
+- type: carccmedInjury
+  id: organDamage
+  name: Organ Damage
+  parent: internalInjury
+  properties:
+    - swelling
+    - necrosis
+
+- type: carccmedInjury
+  id: tissueDamage
+  name: Tissue Damage
+  parent: internalInjury
+  properties:
+    - swelling
+    - necrosis
+
+# other
+- type: carccmedInjury
+  id: chemicalBurn
+  name: Chemical Burn
+  parent: thermalInjury
+  properties:
+    - infection
+    - necrosis
+
+- type: carccmedInjury
+  id: electricalBurn
+  name: Electrical Burn
+  parent: thermalInjury
+  properties:
+    - necrosis
+
+- type: carccmedInjury
+  id: radiationExposure
+  name: Radiation Exposure
+  parent: baseInjury
+  properties:
+    - necrosis
+    - pain
